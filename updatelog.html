@@ -1,1 +1,20 @@
-<center><h1>此处为博客更新日志</h1></center>
+<!DOCTYPE html>
+<html>
+    <center><h1>此处为博客更新日志</h1></center>
+</html>
+<html><!--时间组件-->
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function getD1(){
+                var date= new Date();
+                var d1= date.toLocaleString();
+                document.getElementById("datetime").innerHTML =d1;
+            }
+            setInterval("getD1();",1000);
+        </script>
+        </head>
+        <body onload= getD1()>
+        <div id = "datetime"></div>
+        </body>
+</html>
