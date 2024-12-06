@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Formula Part2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <center><h1>Mathematica Formula Part2</h1></center>
+    <p><b>在此篇文章中主要写的是一些求导公式,几乎涵盖了大部分使用场景</b></p>
+    <p><b>这里是常数函数的求导</b></p>
+    若 \(y = C\)（\(C\)为常数），则 \(y^{\prime}=0\)，代码如下：
+    \[
+    y = C \Rightarrow y^{\prime}=\frac{dy}{dx}=0
+    \]
+    <p><b>这里是幂函数的求导</b></p>
+    若 \(y = x^{n}\)（\(n\)为实数），则 \(y^{\prime}=nx^{n - 1}\)，
+    \[
+    y = x^{n} \Rightarrow y^{\prime}=\frac{dy}{dx}=nx^{n - 1}
+    \]
+<p><b>这里是指数函数的求导</b></p>
+1. 若 \(y = a^{x}\)（\(a>0,a\neq1\)），则 \(y^{\prime}=a^{x}\ln a\)，
+\[
+y = a^{x} \Rightarrow y^{\prime}=\frac{dy}{dx}=a^{x}\ln a
+\]
+2. 特别地，当 \(y = e^{x}\)时， \(y^{\prime}=e^{x}\)，
+\[
+y = e^{x} \Rightarrow y^{\prime}=\frac{dy}{dx}=e^{x}
+\]
+<p><b>这里是对数函数的求导</b></p>
+1. 若 \(y=\log_{a}x\)（\(a>0,a\neq1,x>0\)），则 \(y^{\prime}=\frac{1}{x\ln a}\)，
+\[
+y=\log_{a}x \Rightarrow y^{\prime}=\frac{dy}{dx}=\frac{1}{x\ln a}
+\]
+2. 当 \(y = \ln x\)（即 \(y=\log_{e}x\)）时， \(y^{\prime}=\frac{1}{x}\)，
+\[
+y = \ln x \Rightarrow y^{\prime}=\frac{dy}{dx}=\frac{1}{x}
+\]
+<p><b>这里是三角函数的求导</b></p>
+1. 若 \(y=\sin x\)，则 \(y^{\prime}=\cos x\)，
+\[
+y=\sin x \Rightarrow y^{\prime}=\frac{dy}{dx}=\cos x
+\]
+2. 若 \(y=\cos x\)，则 \(y^{\prime}=-\sin x\)，
+\[
+y=\cos x \Rightarrow y^{\prime}=\frac{dy}{dx}=-\sin x
+\]
+3. 若 \(y=\tan x=\frac{\sin x}{\cos x}\)，则 \(y^{\prime}=\sec^{2}x=\frac{1}{\cos^{2}x}\)，
+\[
+y=\tan x \Rightarrow y^{\prime}=\frac{dy}{dx}=\frac{1}{\cos^{2}x}
+\]
+4. 若 \(y=\cot x=\frac{\cos x}{\sin x}\)，则 \(y^{\prime}=-\csc^{2}x=-\frac{1}{\sin^{2}x}\)，
+\[
+y=\cot x \Rightarrow y^{\prime}=\frac{dy}{dx}=-\frac{1}{\sin^{2}x}
+\]
+5. 若 \(y=\sec x=\frac{1}{\cos x}\)，则 \(y^{\prime}=\sec x\tan x\)，
+\[
+y=\sec x \Rightarrow y^{\prime}=\frac{dy}{dx}=\sec x\tan x
+\]
+6. 若 \(y=\csc x=\frac{1}{\sin x}\)，则 \(y^{\prime}=-\csc x\cot x\)，
+\[
+y=\csc x \Rightarrow y^{\prime}=\frac{dy}{dx}=-\csc x\cot x
+\]
+<p><b>这里是反三角函数的求导</b></p>
+1. 若 \(y = \arcsin x\)，则 \(y^{\prime}=\frac{1}{\sqrt{1 - x^{2}}}\)，
+\[
+y=\arcsin x \Rightarrow y^{\prime}=\frac{dy}{dx}=\frac{1}{\sqrt{1 - x^{2}}}
+\]
+2. 若 \(y = \arccos x\)，则 \(y^{\prime}=-\frac{1}{\sqrt{1 - x^{2}}}\)，
+\[
+y=\arccos x \Rightarrow y^{\prime}=\frac{dy}{dx}=-\frac{1}{\sqrt{1 - x^{2}}}
+\]
+3. 若 \(y=\arctan x\)，则 \(y^{\prime}=\frac{1}{1 + x^{2}}\)，
+\[
+y=\arctan x \Rightarrow y^{\prime}=\frac{dy}{dx}=\frac{1}{1 + x^{2}}
+\]
+4. 若 \(y=\text{arccot} x\)，则 \(y^{\prime}=-\frac{1}{1 + x^{2}}\)，
+\[
+y=\text{arccot} x \Rightarrow y^{\prime}=\frac{dy}{dx}=-\frac{1}{1 + x^{2}}
+\]
+
+
+<p><b>以下是双曲函数部分</b></p>
+双曲正弦函数：
+定义：
+\[
+\sinh x = \frac{e^{x} - e^{-x}}{2}
+\]
+
+\[
+(\sinh x)^\prime = \frac{d}{dx}\left(\frac{e^{x} - e^{-x}}{2}\right) = \frac{e^{x} + e^{-x}}{2} = \cosh x
+\]
+
+
+双曲余弦函数：
+定义：
+\[
+\cosh x = \frac{e^{x} + e^{-x}}{2}
+\]
+\[
+(\cosh x)^\prime = \frac{d}{dx}\left(\frac{e^{x} + e^{-x}}{2}\right) = \frac{e^{x} - e^{-x}}{2} = \sinh x
+\]
+
+
+双曲正切函数：
+定义：
+\[
+\tanh x = \frac{\sinh x}{\cosh x} = \frac{e^{x} - e^{-x}}{e^{x} + e^{-x}}
+\]
+\[
+(\tanh x)^\prime = \frac{\cosh x \cdot \cosh x - \sinh x \cdot \sinh x}{\cosh^{2}x} = \frac{1}{\cosh^{2}x} = \text{sech}^{2}x
+\]
+
+
+双曲余切函数：
+定义：
+\[
+\coth x = \frac{\cosh x}{\sinh x} = \frac{e^{x} + e^{-x}}{e^{x} - e^{-x}} \quad (x \neq 0)
+\]
+\[
+(\coth x)^\prime = \frac{\sinh x \cdot \sinh x - \cosh x \cdot \cosh x}{\sinh^{2}x} = -\frac{1}{\sinh^{2}x} = -\text{csch}^{2}x \quad (x \neq 0)
+\]
+
+
+双曲正割函数：
+定义：
+\[
+\text{sech} x = \frac{1}{\cosh x}
+\]
+\[
+(\text{sech} x)^\prime = -\frac{\sinh x}{\cosh^{2}x} = -\text{sech} x \cdot \tanh x
+\]
+
+
+双曲余割函数：
+定义：
+\[
+\text{csch} x = \frac{1}{\sinh x} \quad (x \neq 0)
+\]
+\[
+(\text{csch} x)^\prime = -\frac{\cosh x}{\sinh^{2}x} = -\text{csch} x \cdot \coth x \quad (x \neq 0)
+\]
+
+<h3><b>函数求导的四则运算</b></h3>
+若 \(y = u + v\)，则 \(y^{\prime}=u^{\prime}+v^{\prime}\)，代码：
+\[
+y = u + v \Rightarrow y^{\prime}=\frac{d(u + v)}{dx}=\frac{du}{dx}+\frac{dv}{dx}=u^{\prime}+v^{\prime}
+\]
+
+若 \(y = u - v\)，则 \(y^{\prime}=u^{\prime}-v^{\prime}\)，代码：
+\[
+y = u - v \Rightarrow y^{\prime}=\frac{d(u - v)}{dx}=\frac{du}{dx}-\frac{dv}{dx}=u^{\prime}-v^{\prime}
+\]
+
+若 \(y = uv\)，则 \(y^{\prime}=u^{\prime}v + uv^{\prime}\)，代码：
+\[
+y = uv \Rightarrow y^{\prime}=\frac{d(uv)}{dx}=u^{\prime}v + uv^{\prime}
+\]
+
+若 \(y=\frac{u}{v}\)（\(v\neq0\)），则 \(y^{\prime}=\frac{u^{\prime}v - uv^{\prime}}{v^{2}}\)，代码：
+\[
+y=\frac{u}{v} \Rightarrow y^{\prime}=\frac{d\left(\frac{u}{v}\right)}{dx}=\frac{u^{\prime}v - uv^{\prime}}{v^{2}}
+\]
+
+<p><b>以及最后的复合函数求导公式</b></p>
+则 \(y^{\prime}=f^{\prime}(u)g^{\prime}(x)\)，代码：
+\[
+\frac{dy}{dx}=\frac{dy}{du}\cdot\frac{du}{dx} \text{ 即 } y^{\prime}=f^{\prime}(u)g^{\prime}(x)
+\]
+
+</body>
+</html>
