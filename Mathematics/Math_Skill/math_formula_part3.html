@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taylor Formula</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <center><h1>Taylor Formula</h1></center>
+    <p><b>在此篇文章中有一些泰勒展开式，主要用在极限求法上，可以稍微记忆</b></p>
+
+    <p>\[
+        e^{x}=\sum_{n = 0}^{\infty}\frac{x^{n}}{n!}=1 + x+\frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\cdots+\frac{x^{n}}{n!}+\cdots
+        \]</p>
+        <p>
+        \[
+        \ln(1 + x)=\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{x^{n}}{n}=x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \cdots + (-1)^{n - 1}\frac{x^{n}}{n} + \cdots \quad (-1 < x \leq 1)
+        \]
+        </p>
+        <p>
+            \[
+\sin x=\sum_{k = 0}^{\infty}(-1)^{k}\frac{x^{2k + 1}}{(2k + 1)!}=x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \cdots + (-1)^{k}\frac{x^{2k + 1}}{(2k + 1)!} + \cdots
+\]
+        </p>
+        <p>
+            \[
+\cos x=\sum_{k = 0}^{\infty}(-1)^{k}\frac{x^{2k}}{(2k)!}=1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \cdots + (-1)^{k}\frac{x^{2k}}{(2k)!} + \cdots
+\]
+        </p>
+        <p>
+            \[
+\tan x = x + \frac{1}{3}x^{3} + \frac{2}{15}x^{5} + \cdots\quad (|x| < \frac{\pi}{2})
+\]
+        </p>
+        <p>
+            \[
+\cot x=\frac{1}{x}-\frac{x}{3}-\frac{x^{3}}{45}-\cdots\quad (0 < |x| < \pi)
+\]
+        </p>
+        <p>
+\[
+\sec x = 1 + \frac{x^{2}}{2} + \frac{5x^{4}}{24} + \frac{61x^{6}}{720} + \cdots = \sum_{n = 0}^{\infty} \frac{E_{2n}}{(2n)!}x^{2n} \quad (|x| < \frac{\pi}{2})
+\]
+        </p>
+        <p>
+            \[
+            \csc x = \frac{1}{x} + \frac{x}{6} + \frac{7x^{3}}{360} + \frac{31x^{5}}{15120} + \cdots \quad (0 < |x| < \pi)
+            \]
+        </p>
+        <p>
+
+        </p>
+        <p>
+            \[
+(1 + x)^{\alpha}=\sum_{n = 0}^{\infty}\frac{\alpha(\alpha - 1)\cdots(\alpha - n + 1)}{n!}x^{n}=1 + \alpha x + \frac{\alpha(\alpha - 1)}{2!}x^{2} + \cdots + \frac{\alpha(\alpha - 1)\cdots(\alpha - n + 1)}{n!}x^{n} + \cdots \quad \text{(收敛区间依}\alpha\text{而定)}
+\]
+        </p>
+        <p>\[
+            \arctan x=\sum_{n = 0}^{\infty} \frac{(-1)^{n}}{2n + 1}x^{2n + 1}=x - \frac{x^{3}}{3} + \frac{x^{5}}{5} - \frac{x^{7}}{7} + \cdots + \frac{(-1)^{n}}{2n + 1}x^{2n + 1} + \cdots\quad (|x| < 1)
+            \]</p>
+            <p>
+                \[
+\arcsin x=\sum_{n = 0}^{\infty} \frac{(2n)!}{4^{n}(n!)^{2}(2n + 1)}x^{2n + 1}=x + \frac{1}{6}x^{3} + \frac{3}{40}x^{5} + \cdots + \frac{(2n)!}{4^{n}(n!)^{2}(2n + 1)}x^{2n + 1} + \cdots\quad (|x| < 1)
+\]
+            </p>
+            <p>
+                \[
+\arccos x=\frac{\pi}{2}-\sum_{n = 0}^{\infty} \frac{(2n)!}{(2n + 1)4^{n}(n!)^{2}}x^{2n + 1}= \frac{\pi}{2}-x - \frac{x^{3}}{6} - \frac{3x^{5}}{40} - \cdots \quad (-1 \leq x \leq 1)
+\]
+            </p>
+            <p>\[
+                \sinh x=\sum_{n = 0}^{\infty} \frac{x^{2n + 1}}{(2n + 1)!}=x + \frac{x^{3}}{3!} + \frac{x^{5}}{5!} + \cdots + \frac{x^{2n + 1}}{(2n + 1)!} + \cdots
+                \]
+            </p>
+            <p>
+                \[
+                \cosh x=\sum_{n = 0}^{\infty} \frac{x^{2n}}{(2n)!}=1 + \frac{x^{2}}{2!} + \frac{x^{4}}{4!} + \cdots + \frac{x^{2n}}{(2n)!} + \cdots
+                \]
+
+            </p>
+            <p>
+                \[
+\text{erf}(x)=\frac{2}{\sqrt{\pi}}\left(x - \frac{x^{3}}{3} + \frac{x^{5}}{10} - \frac{x^{7}}{42} + \cdots\right)
+\]
+            </p>
+            <p>
+                \[
+\text{Si}(x)=x - \frac{x^{3}}{3\times3!} + \frac{x^{5}}{5\times5!} - \frac{x^{7}}{7\times7!} + \cdots
+\]
+            </p>
+            <p>
+                \[
+\text{Ci}(x)=\gamma + \ln x - \frac{x^{2}}{2\times2!} + \frac{x^{4}}{4\times4!} - \frac{x^{6}}{6\times6!} + \cdots
+\]
+            </p>
+</body>
+</html>
